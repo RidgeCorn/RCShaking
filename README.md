@@ -1,0 +1,4 @@
+RCShaking
+=========
+
+Make UIView shakable.
