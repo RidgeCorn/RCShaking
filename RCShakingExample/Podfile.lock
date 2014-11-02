@@ -1,0 +1,17 @@
+PODS:
+  - pop (1.0.7)
+  - RCShaking (0.1):
+    - pop
+
+DEPENDENCIES:
+  - RCShaking (from `../`)
+
+EXTERNAL SOURCES:
+  RCShaking:
+    :path: ../
+
+SPEC CHECKSUMS:
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  RCShaking: 5d259f0e721b917d9e94ac82851610d76b360177
+
+COCOAPODS: 0.34.4

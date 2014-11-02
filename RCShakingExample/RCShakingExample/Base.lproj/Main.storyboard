@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="gws-ZA-GsJ">
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1PK-ak-PsR"/>
+                                    <constraint firstAttribute="width" constant="80" id="Scq-Ff-YT8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJg-0P-s9i">
+                                <rect key="frame" x="250" y="390" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Tq-Fo-Ubu"/>
+                                    <constraint firstAttribute="width" constant="100" id="Rff-7B-IYl"/>
+                                </constraints>
+                                <state key="normal" title="HorShaking">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="horShakingTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GXy-Fb-HoD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlV-Ft-4Hd">
+                                <rect key="frame" x="135" y="390" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XJg-92-jLR"/>
+                                    <constraint firstAttribute="height" constant="40" id="orc-ei-B6q"/>
+                                </constraints>
+                                <state key="normal" title="VerShaking">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="verShakingTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5km-6Y-9tn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqv-a9-4l5">
+                                <rect key="frame" x="365" y="390" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="489-8h-d5s"/>
+                                    <constraint firstAttribute="width" constant="100" id="mTB-Im-M3G"/>
+                                </constraints>
+                                <state key="normal" title="RanShaking">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ranShaking:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7bj-a2-GFB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cqv-a9-4l5" firstAttribute="centerY" secondItem="kJg-0P-s9i" secondAttribute="centerY" id="DOt-TY-kYH"/>
+                            <constraint firstItem="kJg-0P-s9i" firstAttribute="centerY" secondItem="JlV-Ft-4Hd" secondAttribute="centerY" id="HiU-FV-JS5"/>
+                            <constraint firstItem="kJg-0P-s9i" firstAttribute="top" secondItem="gws-ZA-GsJ" secondAttribute="bottom" constant="50" id="PZ6-ge-lKH"/>
+                            <constraint firstItem="kJg-0P-s9i" firstAttribute="leading" secondItem="JlV-Ft-4Hd" secondAttribute="trailing" constant="15" id="V1x-i6-JFa"/>
+                            <constraint firstAttribute="centerX" secondItem="gws-ZA-GsJ" secondAttribute="centerX" id="Vdw-bh-01X"/>
+                            <constraint firstAttribute="centerX" secondItem="kJg-0P-s9i" secondAttribute="centerX" id="bTC-UH-JaN"/>
+                            <constraint firstItem="cqv-a9-4l5" firstAttribute="leading" secondItem="kJg-0P-s9i" secondAttribute="trailing" constant="15" id="vdo-6X-MFB"/>
+                            <constraint firstAttribute="centerY" secondItem="gws-ZA-GsJ" secondAttribute="centerY" id="yPe-1g-EKk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarView" destination="gws-ZA-GsJ" id="cjy-FP-26S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar.png" width="49" height="49"/>
+    </resources>
+</document>
